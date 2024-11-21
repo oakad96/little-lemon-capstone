@@ -51,7 +51,6 @@ export function NavBar() {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
-              variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-secondary"
