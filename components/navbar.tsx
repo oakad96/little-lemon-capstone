@@ -4,24 +4,40 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-
+import Image from "next/image";
+import logo from "@/images/logo.png";
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-primary text-white fixed w-full z-50 shadow-sm">
+    <nav className="bg-white text-primary fixed w-full z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-secondary">Little Lemon</Link>
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="Little Lemon Logo"
+                width={100}
+                height={27.3}
+              />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-white hover:text-secondary">Home</Link>
-            <Link href="#" className="text-white hover:text-secondary">Menu</Link>
-            <Link href="#" className="text-white hover:text-secondary">About</Link>
-            <Link href="#" className="text-white hover:text-secondary">Contact</Link>
+            <Link href="/" className="text-black hover:text-secondary">
+              Home
+            </Link>
+            <Link href="#" className="text-black hover:text-secondary">
+              Menu
+            </Link>
+            <Link href="#" className="text-black hover:text-secondary">
+              About
+            </Link>
+            <Link href="#" className="text-black hover:text-secondary">
+              Contact
+            </Link>
           </div>
 
           <div className="hidden md:flex">

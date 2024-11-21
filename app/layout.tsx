@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { NavigationMenu } from "@/components/ui/navigation-menu";
 import { NavBar } from "@/components/navbar";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Little Lemon | Mediterranean Restaurant Chicago",
-  description: "Family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.",
+  description:
+    "Family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.",
 };
 
 export default function RootLayout({
@@ -25,13 +24,18 @@ export default function RootLayout({
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-xl font-bold mb-4 text-secondary">Little Lemon</h3>
+                <h3 className="text-xl font-bold mb-4 text-secondary">
+                  Little Lemon
+                </h3>
                 <p className="text-white/80">
-                  A family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+                  A family-owned Mediterranean restaurant, focused on
+                  traditional recipes served with a modern twist.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-4 text-secondary">Contact</h3>
+                <h3 className="text-xl font-bold mb-4 text-secondary">
+                  Contact
+                </h3>
                 <p className="text-white/80">123 W Madison St</p>
                 <p className="text-white/80">Chicago, IL 60607</p>
                 <p className="text-white/80">Tel: (312) 555-0123</p>
