@@ -2,9 +2,6 @@ import About from "@/components/About";
 import FeaturedDishes from "@/components/FeaturedDishes";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import { Utensils, Clock, MapPin } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   const featuredDishes = [
